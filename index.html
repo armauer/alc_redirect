@@ -6,25 +6,27 @@
   <style>
     body { 
       font-family: Arial, sans-serif; 
-      text-align: center; 
       margin: 0; 
-      padding-top: 5px; 
       background-color: #f0f0f0; /* light gray background */
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;   /* center horizontally */
+      justify-content: center; /* center vertically */
+      height: 100vh; /* make body full screen height */
     }
     a.button {
-      display: flex;               /* use flexbox instead of inline-block */
-      align-items: center;         /* vertically center icon + text */
-      justify-content: center;     /* horizontally center contents */
-      padding: 6px 12px; 
-      font-size: 14px;             /* bumped font size for readability */
+      display: flex;               
+      align-items: center;         
+      justify-content: center;     
+      font-size: 14px;             
       font-weight: bold;
       color: #fff; 
       border-radius: 8px; 
       text-decoration: none;
-      margin: 5px; 
+      margin: 10px;  /* spacing between buttons */
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      width: 150px;                /* fixed width */
-      height: 30px;                /* fixed height for consistency */
+      width: 200px;  /* consistent width */
+      height: 40px;  /* consistent height */
       text-align: center; 
     }
     /* Automated Logic style */
@@ -35,18 +37,18 @@
 
     /* Niagara style */
     a.niagara {
-      background-color: #006747; /* USF red */
+      background-color: #006747; 
     }
     a.niagara:hover { background-color: #004d36; }
   </style>
 </head>
 <body>
   <a class="button automated-logic" href="http://vmi-facilities-01.ds.usfca.edu/" target="_blank" rel="noopener noreferrer">
-    Launch ALC
+    🚀 Launch ALC
   </a>
 
   <a class="button niagara" href="http://10.21.0.2" target="_blank" rel="noopener noreferrer">
-    Launch Niagara
+    🚀 Launch Niagara
   </a>
 </body>
 </html>
