@@ -12,17 +12,20 @@
       background-color: #f0f0f0; /* light gray background */
     }
     a.button {
-      display: inline-block; 
+      display: flex;               /* use flexbox instead of inline-block */
+      align-items: center;         /* vertically center icon + text */
+      justify-content: center;     /* horizontally center contents */
       padding: 6px 12px; 
-      font-size: 10px; 
+      font-size: 14px;             /* bumped font size for readability */
       font-weight: bold;
       color: #fff; 
       border-radius: 8px; 
       text-decoration: none;
       margin: 5px; 
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      width: 200px;        /* fixed width */
-      text-align: center;  /* center the text inside */
+      width: 200px;                /* fixed width */
+      height: 40px;                /* fixed height for consistency */
+      text-align: center; 
     }
     /* Automated Logic style */
     a.automated-logic {
