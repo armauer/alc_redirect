@@ -2,20 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Automated Logic Redirect</title>
+  <title>Facilities Redirects</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding-top: 2px; /* small spacing so it’s not glued to the very edge */ }
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      margin: 0; 
+      padding-top: 5px; 
+      background-color: #f0f0f0; /* light gray background */
+    }
     a.button {
-      display: inline-block; padding: 8px 16px; font-size: 12px; font-weight: bold;
-      color: #fff; background-color: #006747; border-radius: 8px; text-decoration: none;
+      display: inline-block; 
+      padding: 8px 16px; 
+      font-size: 12px; 
+      font-weight: bold;
+      color: #fff; 
+      border-radius: 8px; 
+      text-decoration: none;
+      margin: 10px; 
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     }
-    a.button:hover { background-color: #004d36; }
+    /* Automated Logic style */
+    a.automated-logic {
+      background-color: #006747; /* USF green */
+    }
+    a.automated-logic:hover { background-color: #004d36; }
+
+    /* Niagara style */
+    a.niagara {
+      background-color: #006747; /* USF red */
+    }
+    a.niagara:hover { background-color: #004d36; }
   </style>
 </head>
 <body>
-  <a class="button" href="http://vmi-facilities-01.ds.usfca.edu/" target="_blank" rel="noopener noreferrer">
+  <a class="button automated-logic" href="http://vmi-facilities-01.ds.usfca.edu/" target="_blank" rel="noopener noreferrer">
     🚀 Launch ALC
+  </a>
+
+  <a class="button niagara" href="http://10.21.0.2" target="_blank" rel="noopener noreferrer">
+    🚀 Launch Niagara
   </a>
 </body>
 </html>
